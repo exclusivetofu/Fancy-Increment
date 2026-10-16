@@ -288,7 +288,7 @@ function script_properties()
     obs.obs_properties_add_text(
         props,
         "footer",
-        "<b>Fancy Increment v1.0</b><br>" ..
+        "<b>Fancy Increment v1.1</b><br>" ..
         "Created by itMeTofuwu<br>" ..
         "<a href='https://www.tofusgarden.com'>Website</a>",
         obs.OBS_TEXT_INFO
