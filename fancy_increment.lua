@@ -357,7 +357,7 @@ function script_load(settings)
     )
 
     -- Restore increment hotkey
-    local increment_data = obs.obs_data_get_array(
+    local increment_hotkey_data = obs.obs_data_get_array(
         settings,
         "increment_hotkey"
     )
@@ -370,7 +370,7 @@ function script_load(settings)
     obs.obs_data_array_release(increment_hotkey_data)
 
     -- Restore decrement hotkey
-    local decrement_data = obs.obs_data_get_array(
+    local decrement_hotkey_data = obs.obs_data_get_array(
         settings,
         "decrement_hotkey"
     )
@@ -393,7 +393,7 @@ function script_save(settings)
     )
 
     -- Save increment hotkey
-    local hotkey_data = obs.obs_hotkey_save(
+    local increment_hotkey_data = obs.obs_hotkey_save(
         increment_hotkey_id
     )
 
@@ -406,7 +406,7 @@ function script_save(settings)
     obs.obs_data_array_release(increment_hotkey_data)
 
     -- Save decrement hotkey
-    local decrement_data = obs.obs_hotkey_save(
+    local decrement_hotkey_data = obs.obs_hotkey_save(
         decrement_hotkey_id
     )
 
